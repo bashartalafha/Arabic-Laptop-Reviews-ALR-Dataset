@@ -11,6 +11,48 @@ OpenJDK Runtime Environment (build 1.8.0_275-8u275-b01-0ubuntu1~20.04-b01)
 OpenJDK 64-Bit Server VM (build 25.275-b01, mixed mode)
 
 ```
+#### Baseline:
+```
+unzip baseevalvalid1.zip
+cd BaseEvalValid1/
+cd libsvm-3.18/
+make
+cd ../
+
+# Download "absa15.conf" and "Arabic_Laptop_Reviews.xml" from the github repo, and place them in the current directory (BaseEvalValid1)
+# This will replace the old "absa15.conf" with the downloaded one.
+
+# run the baseline file
+./absa15.sh
+```
+```
+** Categories Evaluation **
+
+#predicted=121
+#gold=285
+#common=64
+PRE=0.5289256
+REC=0.22456141
+F-MEASURE=0.31527093
+
+***** Evaluate Stage 2 Output (Polarity) *****
+
+Comparing:/home/bashar/ABSA/2015/Files/teGldAspTrg.PrdPol.xml to /home/bashar/ABSA/2015/Files/teGld.xml
+Polarity Evaluation
+
+------------------------------------------------------------------------
+label\measure    |Precision        |Recall           |F-measure        |
+------------------------------------------------------------------------
+positive         |0.7689(163/212)  |0.8402(163/194)  |0.803            |
+negative         |0.6395(55/86)    |0.5288(55/104)   |0.5789           |
+neutral          |NaN(0/0)         |NaN(0/0)         |NaN              |
+conflict         |NaN(0/0)         |NaN(0/0)         |NaN              |
+------------------------------------------------------------------------
+Accuracy:	0.7315436 (218/298)
+
+*******************************************
+
+```
 
 You may find the following papers from our group relevant:
 - Mohammad Al-Smadi, Bashar Talafha, Mahmoud Al-Ayyoub and Yaser Jararweh. Using Long Short-Term Memory Deep Neural Networks for Aspect-Based Sentiment Analysis of Arabic Reviews. International Journal of Machine Learning and Cybernetics (JMLC). To appear.
