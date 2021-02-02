@@ -2,6 +2,16 @@ This repository is related to our work on Aspect-Based Sentiment Analysis (ABSA)
 Please, cite the following paper if you find the resources in this project useful:
 - Mahmoud Al-Ayyoub, Amal Gigieh, Areej Al-Qwaqenah, Mohammed Al-Kabi, Bashar Talafhah and Izzat Alsmadi. Aspect-Based Sentiment Analysis of Arabic Laptop Reviews. In the proceedings of the 18th International Arab Conference on Information Technology (ACIT), 2017.
 
+### Run the baseline
+#### Prerequisite:
+`java -version`
+```
+openjdk version "1.8.0_275"
+OpenJDK Runtime Environment (build 1.8.0_275-8u275-b01-0ubuntu1~20.04-b01)
+OpenJDK 64-Bit Server VM (build 25.275-b01, mixed mode)
+
+```
+
 You may find the following papers from our group relevant:
 - Mohammad Al-Smadi, Bashar Talafha, Mahmoud Al-Ayyoub and Yaser Jararweh. Using Long Short-Term Memory Deep Neural Networks for Aspect-Based Sentiment Analysis of Arabic Reviews. International Journal of Machine Learning and Cybernetics (JMLC). To appear.
 https://doi.org/10.1007/s13042-018-0799-4 
